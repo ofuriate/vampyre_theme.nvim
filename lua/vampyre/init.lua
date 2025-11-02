@@ -6,9 +6,9 @@ local M = {}
 -- Vampire-themed color palette (BLOOD RED, SCARLET & GOLD ONLY)
 local colors = {
   -- Background colors - deep blood red tones
-  bg = "#1a0000",           -- Deep blood red background
-  bg_alt = "#250000",       -- Slightly lighter blood red
-  bg_highlight = "#300505", -- Highlighted blood tint
+  bg = "#200000",           -- Deep blood red background (more visible)
+  bg_alt = "#2a0000",       -- Slightly lighter blood red
+  bg_highlight = "#3a0505", -- Highlighted blood tint
   
   -- Foreground colors - gold and white for contrast
   fg = "#ffd700",           -- Gold for main text
