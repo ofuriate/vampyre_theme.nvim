@@ -3,44 +3,44 @@
 
 local M = {}
 
--- Vampire-themed color palette
+-- Vampire-themed color palette (AGGRESSIVE EDITION)
 local colors = {
-  -- Background colors inspired by gothic castles and night
-  bg = "#0a0a0f",           -- Deep black with slight purple tint
-  bg_alt = "#12121a",       -- Slightly lighter background
-  bg_highlight = "#1a1a2e", -- For highlighted backgrounds
+  -- Background colors - pure darkness
+  bg = "#000000",           -- Pure black (the void)
+  bg_alt = "#0d0d15",       -- Slightly lighter background
+  bg_highlight = "#1a0a1a", -- Dark crimson tint
   
-  -- Foreground colors
-  fg = "#e8e8f0",           -- Soft white for text
-  fg_alt = "#b8b8c8",       -- Dimmed foreground
-  fg_dim = "#888895",       -- Very dim text
+  -- Foreground colors - stark contrast
+  fg = "#f5f5ff",           -- Bright white for text
+  fg_alt = "#c8c8d8",       -- Dimmed foreground
+  fg_dim = "#707080",       -- Very dim text
   
-  -- Vampire red tones (blood-inspired)
-  blood_red = "#c91f37",    -- Bright blood red
-  dark_red = "#8b1a2f",     -- Dark dried blood
-  crimson = "#dc143c",      -- Vivid crimson
+  -- Vampire red tones (SCARLET BLOOD)
+  blood_red = "#ff2400",    -- Scarlet red
+  dark_red = "#8b0000",     -- Dark scarlet
+  crimson = "#dc143c",      -- Deep scarlet crimson
   
-  -- Purple tones (royal vampire colors)
-  royal_purple = "#6a0dad", -- Deep royal purple
-  dark_purple = "#4b0082",  -- Dark indigo
-  pale_purple = "#9d7bd8",  -- Pale lavender
+  -- Purple tones (ROYAL DARKNESS)
+  royal_purple = "#8b00ff", -- Bright royal purple
+  dark_purple = "#3d0066",  -- Deep dark purple
+  pale_purple = "#b388ff",  -- Bright lavender
   
   -- Accent colors
-  moon_white = "#f0f0ff",   -- Moonlight white
-  mist_gray = "#4a4a5e",    -- Misty gray
-  shadow_gray = "#2a2a3e",  -- Shadow gray
+  moon_white = "#ffffff",   -- Pure moonlight white
+  mist_gray = "#3a3a50",    -- Misty gray
+  shadow_gray = "#1a1a2a",  -- Deep shadow gray
   
   -- Special colors
-  fang_white = "#fffafa",   -- Ivory white (for fangs!)
-  gold = "#d4af37",         -- Gothic gold
-  blood_orange = "#ff4500", -- Warning/error color
-  eerie_green = "#39ff14",  -- Eerie neon green
+  fang_white = "#ffffff",   -- Pure white (for fangs!)
+  gold = "#ffd700",         -- Bright gothic gold
+  blood_orange = "#ff2200", -- Intense warning/error color
+  eerie_green = "#00ff41",  -- Bright eerie green
   
-  -- Syntax colors
-  cyan = "#56b6c2",
-  blue = "#61afef",
-  violet = "#8b5cf6",
-  teal = "#008080",
+  -- Syntax colors - more vibrant
+  cyan = "#00e5ff",
+  blue = "#40c4ff",
+  violet = "#a855f7",
+  teal = "#00bfa5",
 }
 
 -- Helper function to set highlights
@@ -59,17 +59,17 @@ function M.setup()
   highlight("NormalFloat", { fg = colors.fg, bg = colors.bg_alt })
   highlight("NormalNC", { fg = colors.fg, bg = colors.bg })
   highlight("LineNr", { fg = colors.mist_gray, bg = colors.bg })
-  highlight("CursorLineNr", { fg = colors.crimson, bg = colors.bg, gui = "bold" })
+  highlight("CursorLineNr", { fg = colors.crimson, bg = colors.bg, gui = "bold,italic" })
   highlight("CursorLine", { bg = colors.bg_highlight })
   highlight("ColorColumn", { bg = colors.bg_highlight })
   highlight("SignColumn", { fg = colors.fg_dim, bg = colors.bg })
   highlight("VertSplit", { fg = colors.shadow_gray, bg = colors.bg })
-  highlight("Visual", { bg = colors.dark_purple })
-  highlight("VisualNOS", { bg = colors.dark_purple })
+  highlight("Visual", { fg = colors.fang_white, bg = colors.dark_purple, gui = "bold" })
+  highlight("VisualNOS", { fg = colors.fang_white, bg = colors.dark_purple, gui = "bold" })
   highlight("Search", { fg = colors.bg, bg = colors.gold })
   highlight("IncSearch", { fg = colors.bg, bg = colors.crimson })
   highlight("CurSearch", { fg = colors.bg, bg = colors.blood_orange })
-  highlight("MatchParen", { fg = colors.crimson, gui = "bold,underline" })
+  highlight("MatchParen", { fg = colors.blood_orange, bg = colors.dark_purple, gui = "bold,underline" })
   highlight("Pmenu", { fg = colors.fg, bg = colors.bg_alt })
   highlight("PmenuSel", { fg = colors.moon_white, bg = colors.royal_purple })
   highlight("PmenuSbar", { bg = colors.shadow_gray })
@@ -83,7 +83,7 @@ function M.setup()
   highlight("FoldColumn", { fg = colors.pale_purple, bg = colors.bg })
   
   -- Syntax highlighting
-  highlight("Comment", { fg = colors.mist_gray, gui = "italic" })
+  highlight("Comment", { fg = colors.mist_gray, gui = "italic,bold" })
   highlight("Constant", { fg = colors.crimson })
   highlight("String", { fg = colors.eerie_green })
   highlight("Character", { fg = colors.pale_purple })
@@ -96,7 +96,7 @@ function M.setup()
   highlight("Conditional", { fg = colors.blood_red, gui = "bold" })
   highlight("Repeat", { fg = colors.blood_red, gui = "bold" })
   highlight("Label", { fg = colors.crimson })
-  highlight("Operator", { fg = colors.fg })
+  highlight("Operator", { fg = colors.crimson, gui = "bold" })
   highlight("Keyword", { fg = colors.blood_red, gui = "bold" })
   highlight("Exception", { fg = colors.blood_orange })
   highlight("PreProc", { fg = colors.gold })
@@ -161,7 +161,7 @@ function M.setup()
   highlight("@attribute", { fg = colors.gold })
   highlight("@property", { fg = colors.cyan })
   highlight("@constructor", { fg = colors.violet })
-  highlight("@operator", { fg = colors.fg })
+  highlight("@operator", { fg = colors.crimson, gui = "bold" })
   highlight("@punctuation.bracket", { fg = colors.fg_alt })
   highlight("@punctuation.delimiter", { fg = colors.fg_alt })
   highlight("@tag", { fg = colors.crimson })
