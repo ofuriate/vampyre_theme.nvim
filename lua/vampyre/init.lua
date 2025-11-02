@@ -3,44 +3,37 @@
 
 local M = {}
 
--- Vampire-themed color palette (AGGRESSIVE EDITION)
+-- Vampire-themed color palette (BLOOD RED, SCARLET & GOLD)
 local colors = {
   -- Background colors - pure darkness
   bg = "#000000",           -- Pure black (the void)
-  bg_alt = "#0d0d15",       -- Slightly lighter background
-  bg_highlight = "#1a0a1a", -- Dark crimson tint
+  bg_alt = "#0d0000",       -- Dark red tint
+  bg_highlight = "#1a0000", -- Deep blood tint
   
   -- Foreground colors - stark contrast
-  fg = "#f5f5ff",           -- Bright white for text
-  fg_alt = "#c8c8d8",       -- Dimmed foreground
-  fg_dim = "#707080",       -- Very dim text
+  fg = "#ffffff",           -- Pure white for text
+  fg_alt = "#d4af37",       -- Gold dimmed foreground
+  fg_dim = "#8b4513",       -- Saddle brown dim text
   
-  -- Vampire red tones (SCARLET BLOOD)
-  blood_red = "#ff2400",    -- Scarlet red
-  dark_red = "#8b0000",     -- Dark scarlet
-  crimson = "#dc143c",      -- Deep scarlet crimson
+  -- Blood red tones
+  blood_red = "#8b0000",    -- Dark blood red
+  bright_blood = "#ff0000", -- Bright blood red
+  scarlet = "#ff2400",      -- Scarlet
+  crimson = "#dc143c",      -- Crimson scarlet
   
-  -- Purple tones (ROYAL DARKNESS)
-  royal_purple = "#8b00ff", -- Bright royal purple
-  dark_purple = "#3d0066",  -- Deep dark purple
-  pale_purple = "#b388ff",  -- Bright lavender
+  -- Gold tones
+  gold = "#ffd700",         -- Bright gold
+  dark_gold = "#b8860b",    -- Dark goldenrod
+  pale_gold = "#ffdf00",    -- Golden yellow
   
-  -- Accent colors
+  -- Accent colors (limited palette)
   moon_white = "#ffffff",   -- Pure moonlight white
-  mist_gray = "#3a3a50",    -- Misty gray
-  shadow_gray = "#1a1a2a",  -- Deep shadow gray
+  mist_gray = "#4a0000",    -- Dark red mist
+  shadow_gray = "#1a0000",  -- Blood shadow
   
   -- Special colors
-  fang_white = "#ffffff",   -- Pure white (for fangs!)
-  gold = "#ffd700",         -- Bright gothic gold
-  blood_orange = "#ff2200", -- Intense warning/error color
-  eerie_green = "#00ff41",  -- Bright eerie green
-  
-  -- Syntax colors - more vibrant
-  cyan = "#00e5ff",
-  blue = "#40c4ff",
-  violet = "#a855f7",
-  teal = "#00bfa5",
+  fang_white = "#ffffff",   -- Pure white
+  blood_orange = "#ff4500", -- Blood orange for errors
 }
 
 -- Helper function to set highlights
