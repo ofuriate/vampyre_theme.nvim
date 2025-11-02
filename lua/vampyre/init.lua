@@ -5,15 +5,15 @@ local M = {}
 
 -- Vampire-themed color palette (BLOOD RED, SCARLET & GOLD ONLY)
 local colors = {
-  -- Background colors - deep blood red tones
-  bg = "#200000",           -- Deep blood red background (more visible)
-  bg_alt = "#2a0000",       -- Slightly lighter blood red
-  bg_highlight = "#3a0505", -- Highlighted blood tint
+  -- Background colors - visible blood red tones
+  bg = "#330000",           -- Blood red background (visible)
+  bg_alt = "#440000",       -- Lighter blood red
+  bg_highlight = "#550808", -- Highlighted blood tint
   
   -- Foreground colors - gold and white for contrast
   fg = "#ffd700",           -- Gold for main text
   fg_alt = "#d4af37",       -- Darker gold
-  fg_dim = "#8b0000",       -- Dark blood red for dim text
+  fg_dim = "#ff6666",       -- Light red for dim text
   
   -- Blood red tones
   blood_red = "#8b0000",    -- Dark blood red
@@ -28,8 +28,8 @@ local colors = {
   
   -- Accent colors (blood red tones only)
   moon_white = "#ffd700",   -- Gold for highlights
-  mist_gray = "#4a0000",    -- Dark blood mist
-  shadow_gray = "#250000",  -- Blood shadow
+  mist_gray = "#660000",    -- Blood mist (visible red)
+  shadow_gray = "#440000",  -- Blood shadow
   
   -- Special colors
   fang_white = "#ffffff",   -- Pure white
