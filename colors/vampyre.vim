@@ -13,4 +13,4 @@ endif
 set background=dark
 let g:colors_name = 'vampyre'
 
-lua require('vampyre')
+lua require('vampyre_theme')
